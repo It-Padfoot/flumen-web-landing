@@ -113,7 +113,7 @@ const PricingSection = () => {
                         : "bg-transparent border-2 border-[#167EDD] text-[#167EDD] hover:bg-[#167EDD] hover:text-white"
                     }`}
                   >
-                    <a href="https://www.flumen.tech/settings/plan" target="_blank" rel="noopener noreferrer">
+                    <a href="https://editor.flumen.tech/settings/plan" target="_blank" rel="noopener noreferrer">
                       Выбрать план
                     </a>
                   </Button>
