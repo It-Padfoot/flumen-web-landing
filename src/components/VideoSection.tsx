@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { Play } from "lucide-react";
+import demoVideo from "@/assets/demo-video.mp4";
 
 const VideoSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -9,16 +9,28 @@ const VideoSection = () => {
       <div className="container px-4">
         <div className="max-w-5xl mx-auto" ref={ref}>
           <div
-            className={`relative w-full aspect-video rounded-2xl bg-muted/50 border border-border flex items-center justify-center transition-all duration-700 ease-out ${
+            className={`relative w-full aspect-video overflow-hidden transition-all duration-700 ease-out ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="flex flex-col items-center gap-3 text-muted-foreground">
-              <div className="rounded-full bg-primary/10 p-4">
-                <Play className="h-10 w-10 text-primary fill-primary" />
-              </div>
-              <span className="text-sm font-medium">Видео скоро</span>
-            </div>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src={demoVideo} type="video/mp4" />
+            </video>
+
+            <div
+              className="pointer-events-none absolute inset-x-0 top-0 bg-[#EDF6FF]"
+              style={{ height: "14px" }}
+            />
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 bg-[#EDF6FF]"
+              style={{ height: "14px" }}
+            />
           </div>
         </div>
       </div>

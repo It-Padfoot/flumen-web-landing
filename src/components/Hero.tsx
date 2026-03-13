@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Title */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in-up text-foreground">
-            ИИ-ассистент для документов
+            ИИ-агент для документов
           </h1>
 
           {/* Subtitle */}

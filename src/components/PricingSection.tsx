@@ -13,7 +13,7 @@ const PricingSection = () => {
       title: "Пробный",
       options: [
         "50 баллов / месяц",
-        "ИИ-ассистент, который:",
+        "ИИ-агент, который:",
         "Редактирует несколько документов за один запрос",
         "Изучает и анализирует файлы, папки в вашей файловой системе и ищет веб-страницы",
         "Запоминает особенности вашей работы",
@@ -26,7 +26,7 @@ const PricingSection = () => {
       title: "Профессиональный",
       options: [
         "1000 баллов / месяц",
-        "ИИ-ассистент, который:",
+        "ИИ-агент, который:",
         "Редактирует несколько документов за один запрос",
         "Изучает и анализирует файлы, папки в вашей файловой системе и ищет веб-страницы",
         "Запоминает особенности вашей работы",
@@ -91,9 +91,9 @@ const PricingSection = () => {
                   {/* Options */}
                   <ul className="space-y-3 flex-grow list-none pl-0">
                     {plan.options.map((option, index) =>
-                      option === "ИИ-ассистент, который:" ? (
+                      option === "ИИ-агент, который:" ? (
                         <li key={index} className="text-muted-foreground font-medium pt-1 pb-0.5">
-                          ИИ-ассистент, который:
+                          ИИ-агент, который:
                         </li>
                       ) : (
                         <li key={index} className="flex items-start gap-3">
@@ -113,7 +113,7 @@ const PricingSection = () => {
                         : "bg-transparent border-2 border-[#167EDD] text-[#167EDD] hover:bg-[#167EDD] hover:text-white"
                     }`}
                   >
-                    <a href="https://www.flumen.tech/settings/plan" target="_blank" rel="noopener noreferrer">
+                    <a href="https://editor.flumen.tech/settings/plan" target="_blank" rel="noopener noreferrer">
                       Выбрать план
                     </a>
                   </Button>
