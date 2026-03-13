@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "development" ? "/" : "/flumen-landing/",
+  // С кастомным доменом base всегда "/"
+  base: "/",
   server: {
     host: "::",
     port: 8080,
