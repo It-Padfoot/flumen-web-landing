@@ -20,12 +20,15 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
-            <Button 
+            <Button
+              asChild
               size="lg"
               className="h-14 px-16 bg-[#167EDD] hover:bg-[#167EDD]/90 text-white font-semibold text-lg"
             >
-              <Download className="mr-2 h-6 w-6" />
-              Скачать плагин
+              <a href={`${import.meta.env.BASE_URL}Flumen.zip`} download="Flumen.zip">
+                <Download className="mr-2 h-6 w-6" />
+                Скачать плагин
+              </a>
             </Button>
           </div>
         </div>
